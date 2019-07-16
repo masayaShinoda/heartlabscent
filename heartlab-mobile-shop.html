@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Heart Lab</title>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="heartlab-desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="heartlab-tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="heartlab-mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-transparent.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
+    <script src="heartlab-mobile.js"></script>
+  </head>
+  <body>
+    <!--- mobile start --->
+    <div class="parent-container-mobile"> <!--- doesn't show up on desktop --->
+      <div class="upper-container-mobile"> <!--- contains nav --->
+        <div id="nav" class="overlay">
+          <a href="#" class="closeBtn" onclick="closeNav()">X</a>
+          <div class="overlay__content">
+            <a href="index.html">Home</a>
+            <a href="heartlab-mobile-shop.html">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+        <div class="mobile-nav" onclick="openNav()">
+          <div class="burger-upper"></div>
+          <div class="burger-mid"></div>
+          <div class="burger-bottom"></div>
+        </div>
+      </div>
+      <div class="mid-container-mobile"> <!--- contains content --->
+        <p class="shop-paragraph">Choose from FOUR different scents:</p>
+        <div class="shop-items-container">
+          <div class="shop-items-container-left">
+            <a href="#"><img src="./img/shop/sexy.png" id="shop-image-1"></a>
+            <p class="item-name">Sexy</p>
+            <a href="#"><img src="./img/shop/sassy.png" id="shop-image-2"></a>
+            <p class="item-name">Sassy</p>
+          </div>
+          <div class="shop-items-container-right">
+            <a href="#"><img src="./img/shop/lovely.png" id="shop-image-3"></a>
+            <p class="item-name">Lovely</p>
+            <a href="#"><img src="./img/shop/nerdy.png" id="shop-image-4"></a>
+            <p class="item-name">Nerdy</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!---mobile end --->
+
+  </body>
+</html>

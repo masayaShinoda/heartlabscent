@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Heart Lab</title>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="heartlab-desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="heartlab-tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="heartlab-mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo-transparent.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
+    <script src="heartlab-mobile.js"></script>
+  </head>
+  <body>
+    <!--- mobile start --->
+    <div class="parent-container-mobile"> <!--- doesn't show up on desktop --->
+      <div class="upper-container-mobile"> <!--- contains nav --->
+        <div id="nav" class="overlay">
+          <a href="#" class="closeBtn" onclick="closeNav()">X</a>
+          <div class="overlay__content">
+            <a href="index.html">Home</a>
+            <a href="heartlab-mobile-shop.html">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+        <div class="mobile-nav" onclick="openNav()">
+          <div class="burger-upper"></div>
+          <div class="burger-mid"></div>
+          <div class="burger-bottom"></div>
+        </div>
+      </div>
+      <div class="mid-container-mobile"> <!--- contains content --->
+        <img src="./img/heartlab logo.png" id="frontpage-logo">
+        <p class="frontpage-subheading">Air Freshener</p>
+        <img src="./img/subtitle.png" id="frontpage-subtitle">
+      </div>
+
+
+    </div>
+    <!---mobile end --->
+
+  </body>
+</html>

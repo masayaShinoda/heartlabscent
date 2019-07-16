@@ -1,0 +1,169 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  .parent-container-mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 5vmax;
+    margin-top: 10vmax;
+
+    /*border: 1px solid red; /* debug */
+  }
+    .upper-container-mobile {
+      display: flex;
+      position: fixed;
+
+
+      /*border: 1px solid blue; /* debug */
+    }
+      #nav {  /* nav overlay mobile */
+
+      }
+      /* copied from glvn */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #F77777;
+        overflow-x: hidden;
+        z-index: 5;
+        transition: all .35s;
+      }
+        .overlay__content {
+          position: relative;
+          top: 20%;
+          width: 100%;
+          margin-left: 10vmax;
+          margin-top: 30px;
+
+        }
+        .overlay a {  /* nav-links for mobile */
+          padding: 1.75vmax;
+          color: white;
+          font-size: 32px;
+          text-decoration: none;
+          font-family: 'Fira Sans', sans-serif;
+          display: block;
+          max-width: 17.5vmax;
+        }
+          .overlay a:hover {
+            color: #F77777;
+            background-color: white;
+          }
+        .overlay .closeBtn {
+          position: absolute;
+          top: 10vmax;
+          left: 15vmin;
+          padding: 5vmin;
+          font-size: 32px;
+          border-radius: 50%;
+        }
+      /* glvn ends here */
+      .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #F77777;
+        border-radius: 100%;
+        width: 62px;
+        height: 62px;
+
+      }
+        .burger-upper, .burger-mid, .burger-bottom {
+          height: 5px;
+          width: 28.47px;
+          margin: 2.5px;
+          background-color: white;
+          border-radius: 20%;
+
+        }
+    .mid-container-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10vmax;
+
+      /*border: red 1px solid; /* debug */
+    }
+    /* homepage start */
+    #frontpage-logo {
+        width: 219px;
+    }
+    .frontpage-subheading {
+      font-family: 'Fira Sans', sans-serif;
+      color: white;
+      font-weight: 400;
+      background: #71D7FF;
+      margin-top: 25px;
+      border-radius: 8px;
+      padding: 5px 16px;
+    }
+    #frontpage-subtitle {
+      width: 141px;
+      position: absolute;
+      bottom: 10vmax;
+    }
+    /* homepage ened */
+    /* shop start */
+    .shop-paragraph {
+      font-family: 'Fira Sans', sans-serif;
+      margin-left: -15vmin;
+      font-size: 24px;
+      max-width: 200px;
+      line-height: 1.4;
+    }
+    .shop-items-container {
+      display: flex;
+      margin-top: 5vmin;
+      flex-direction: row;
+      /*border: red 1px solid;  /* debug */
+
+    }
+      .item-name {
+        font-family: 'Raleway', sans-serif;
+        font-size: 21px;
+      }
+      .shop-items-container-left {
+        display: flex;
+        flex-direction: column;
+        /*border: green 1px solid;   /* debug */
+        width: 125px;
+        height: 300px;
+        margin: 1.25vmax;
+        align-items: center;
+      }
+        #shop-image-1, #shop-image-2 {
+          max-width: 125px;
+          margin: .25vmax 0;
+        }
+        #shop-image-2 {
+          margin-top: 2vmax;
+        }
+      .shop-items-container-right {
+        display: flex;
+        flex-direction: column;
+        /*border: blue 1px solid; /* debug */
+        width: 125px;
+        height: 300px;
+        margin:1.25vmax;
+        margin-top: 10vmax;
+        align-items: center;
+      }
+        #shop-image-3, #shop-image-4 {
+          max-width: 125px;
+          margin: .25vmax 0;
+        }
+
+        #shop-image-4 {
+          margin-top: 2vmax;
+        }
+
+    /* shop end */
