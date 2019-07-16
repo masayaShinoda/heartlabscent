@@ -51,7 +51,7 @@ html {
           text-decoration: none;
           font-family: 'Fira Sans', sans-serif;
           display: block;
-          max-width: 17.5vmax;
+          max-width: 20vmax;
         }
           .overlay a:hover {
             color: #F77777;
@@ -89,7 +89,7 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 10vmax;
+      margin-top: 15vmax;
 
       /*border: red 1px solid; /* debug */
     }
@@ -131,6 +131,7 @@ html {
       .item-name {
         font-family: 'Raleway', sans-serif;
         font-size: 21px;
+        font-weight: 600;
       }
       .shop-items-container-left {
         display: flex;
@@ -143,7 +144,7 @@ html {
       }
         #shop-image-1, #shop-image-2 {
           max-width: 125px;
-          margin: .25vmax 0;
+
         }
         #shop-image-2 {
           margin-top: 2vmax;
@@ -160,7 +161,7 @@ html {
       }
         #shop-image-3, #shop-image-4 {
           max-width: 125px;
-          margin: .25vmax 0;
+
         }
 
         #shop-image-4 {
