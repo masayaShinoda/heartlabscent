@@ -110,6 +110,7 @@ html {
       width: 141px;
       position: absolute;
       bottom: 10vmax;
+      z-index: -1;
     }
     /* homepage ened */
     /* shop start */
