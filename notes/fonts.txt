@@ -1,0 +1,11 @@
+Heading - Raleway	
+
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+Subheading - Fira Sans
+
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+
+Body - Martel
+
+<link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
