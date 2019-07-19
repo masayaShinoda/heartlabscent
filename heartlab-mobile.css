@@ -76,7 +76,7 @@ html {
         border-radius: 100%;
         width: 62px;
         height: 62px;
-
+        box-shadow: 5px 3px 5px rgba(0,0,0,.175);
       }
         .burger-upper, .burger-mid, .burger-bottom {
           height: 5px;
@@ -213,6 +213,7 @@ html {
         font-weight: 500;
         font-family: 'Fira Sans', sans-serif;
         font-size: 16px;
+        text-decoration: none;
       }
       .buy-button {
         display: flex;
@@ -273,3 +274,37 @@ html {
             list-style-type: none;
           }
     /* contact end */
+    /* about start */
+    .about-paragraph-container {
+      margin-top: 50px;
+      width: 290px;
+    }
+      .about-paragraph {
+        line-height: 2.25;
+        font-family: 'Martel', serif;
+        font-size: 12px;
+      }
+    /* about end */
+    /* instructions start */
+    .for-use-container-parent {
+      display: flex;
+      margin-top: 1.75vmax;
+      max-width: 250px;
+    }
+      .for-use-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1.25vmax 2.5vmax;
+      }
+        .for-use-image-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 1.25vmax 0;
+        }
+          .where-use-icon {
+            max-width: 60px;
+          }
+    /* instructions end */
