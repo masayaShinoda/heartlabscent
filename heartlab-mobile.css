@@ -91,7 +91,6 @@ html {
       flex-direction: column;
       align-items: center;
       margin-top: 15vmax;
-
       /*border: red 1px solid; /* debug */
     }
     /* homepage start */
@@ -233,3 +232,44 @@ html {
         font-size: 24px;
       }
     /* shop end */
+    /* contact start */
+    .heading {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      margin-left: -25vmin;
+    }
+    .social-link-container {
+      display: flex;
+      max-width: 300px;
+      flex-direction: column;
+      margin: 3.75vmax 0;
+    }
+      .social-link {
+        min-width: 200px;
+        padding: 1.25vmax 2.5vmax;
+        border-radius: 50px;
+        display: flex;
+        background: rgba(0,0,0,.0125);
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        box-shadow: 12px 5px 5px rgba(0,0,0,.25);
+        margin-top: 2.5vmax;
+      }
+      .social-icon {
+        max-width: 42px;
+        margin: 0 2.5vmax;
+      }
+        .social-name {
+          font-family: 'Fira Sans', sans-serif;
+          font-weight: 800;
+        }
+          .phone-num {
+            min-width: 200px;
+            margin-left: .25vmax;
+            margin-top: .5vmax;
+            list-style-type: none;
+          }
+    /* contact end */
