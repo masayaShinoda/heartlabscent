@@ -52,6 +52,17 @@ body {
           text-decoration: none;
           padding: .5vmin 2vmin;
           margin-left: 30px;
+          box-shadow: 5px 2px 2px rgba(0,0,0,.25);
+        }
+        .nav-link:hover {
+          font-family: 'Fira Sans', sans-serif;
+          font-size: 28px;
+          color: #F77777;
+          background: white;
+          text-decoration: none;
+          padding: .5vmin 2vmin;
+          margin-left: 30px;
+          transition: .2s;
         }
     .mid-container-desktop {
       display: flex;
@@ -77,6 +88,8 @@ body {
           margin-bottom: 5vmax;
           max-width: 25vmax;
           max-height: 250px;
+          box-shadow: 5px 2px 2px rgba(0,0,0,.25);
+          padding: .125vmax;
           border: 1px solid blue; /* debug */
         }
           .about-paragraph {
@@ -95,6 +108,7 @@ body {
           flex-direction: column;
           align-items: center;
           width: 250px;
+          box-shadow: 5px 2px 2px rgba(0,0,0,.25);
           border: 1px solid green; /* debug */
         }
 
@@ -102,7 +116,7 @@ body {
             font-family: 'Raleway', sans-serif;
             font-size: 42px;
             font-weight: lighter;
-            padding-top: 7.5vmax;
+            padding-top: 5vmax;
           }
           .item-name-medium {
             font-family: 'Fira Sans', sans-serif;
