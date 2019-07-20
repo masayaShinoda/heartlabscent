@@ -58,9 +58,9 @@ body {
       flex-direction: column;
       width: 72.92vmax;
       margin-top: 17.5vmax;
-      height: 50vh; /* debug */
       border: 1px solid red; /* debug */
     }
+      /* about starts */
       .about-container {
         display: flex;
         justify-content: center;
@@ -80,15 +80,15 @@ body {
           border: 1px solid blue; /* debug */
         }
           .about-paragraph {
-
             font-family: 'Martel', serif;
             font-size: 18px;
           }
+      /* about ends */
+      /* shop starts */
       .shop-container {
         display: flex;
         justify-content: space-around;
         border: 1px solid red; /* debug */
-
       }
         .shop-item-container {
           display: flex;
@@ -98,69 +98,111 @@ body {
           border: 1px solid green; /* debug */
         }
 
-      .item-name-large {
-font-family: 'Raleway', sans-serif;
-font-size: 42px;
-font-weight: lighter;
-padding-top: 5vmax;
+          .item-name-large {
+            font-family: 'Raleway', sans-serif;
+            font-size: 42px;
+            font-weight: lighter;
+            padding-top: 7.5vmax;
+          }
+          .item-name-medium {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            margin-top: -.5vmax;
+          }
+          .item-pic {
+            max-width: 200px;
+          }
+          .container-align {
+            display: flex;
+            margin: 1.25vmax;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid blue; /* debug */
+          }
+            .item-description {
+              font-family: 'Martel', serif;
+              line-height: 2.1;
+              font-size: 18px;
+              max-width: 200px;
+              margin-bottom: 1.5vmax;
+            }
+            .instructions-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 125px;
+              height: 35px;
+              background: #71D7FF;
+              border-radius: 20px;
+              box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+            }
+              .instructions-link {
+                color: white;
+                font-weight: 500;
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 16px;
+                text-decoration: none;
+              }
+            .buy-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 16px;
+              width: 200px;
+              height: 50px;
+              background: #F77777;
+              border-radius: 30px;
+              box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+            }
+              .buy-link {
+                color: white;
+                font-weight: 500;
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 24px;
+              }
+      /* shop end */
+      /* instructions and contact start */
+      .instructions-contact-parent-container {
+        display: flex;
 
-}
-.item-name-medium {
-font-family: 'Fira Sans', sans-serif;
-font-size: 24px;
-font-weight: 800;
-margin-top: -.5vmax;
-}
-.item-pic {
-max-width: 200px;
-
-}
-.container-align {
-display: flex;
-margin: 1.25vmax;
-flex-direction: column;
-align-items: center;
-border: 1px solid blue; /* debug */
-}
-.item-description {
-  font-family: 'Martel', serif;
-  line-height: 2.1;
-  font-size: 18px;
-  max-width: 200px;
-  margin-bottom: 1.5vmax;
-
-}
-.instructions-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  height: 35px;
-  background: #71D7FF;
-  border-radius: 20px;
-  box-shadow: 2px 5px 5px rgba(0,0,0,.5);
-}
-.instructions-link {
-  color: white;
-  font-weight: 500;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-}
-.buy-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
-  width: 200px;
-  height: 50px;
-  background: #F77777;
-  border-radius: 30px;
-  box-shadow: 2px 5px 5px rgba(0,0,0,.5);
-}
-.buy-link {
-  color: white;
-  font-weight: 500;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 24px;
-}
+        flex-direction: space-between;
+        margin-top: 5vmax;
+      }
+        .instructions-container {
+          display: flex;
+          flex-direction: column;
+          max-width: 50%;
+          border: 1px solid blue; /* debug */
+        }
+        .heading {
+          font-family: 'Fira Sans', sans-serif;
+          font-weight: 800;
+          font-size: 24px;
+        }
+        /* instructions start */
+        .for-use-container-parent {
+          display: flex;
+          margin-top: 1.25vmax;
+          border: 1px solid red; /* debug */
+        }
+        .for-use-container {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          border: 1px solid green; /* debug */
+          margin: 1.25vmax 1.25vmax;
+        }
+        .for-use-image-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid blue; /* debug */
+          margin: .75vmax .25vmax;
+        }
+        .where-use-icon {
+          max-width: 80px;
+        }
+        /* instructions end */
+      /* instructions and contact end */
