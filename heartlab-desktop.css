@@ -6,6 +6,161 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+}
   .parent-container-mobile {  /* doesn't show up on desktop */
     display: none;
   }
+  .parent-container-desktop {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    width: 72.92vmax;
+    border: 1px solid red; /* debug */
+  }
+    .upper-container-desktop {
+      display: flex;
+      position: fixed;
+      background: white;
+      justify-content: space-around;
+      align-items: flex-end;
+      padding-top: 10vmin;
+      padding-bottom: 2.5vmin;
+      width: 72.92vmax;
+      border: 1px solid blue; /* debug */
+
+
+    }
+      .desktop-logo {
+        display: inline-block;
+        max-width: 280px;
+
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid green; /* debug */
+      }
+        .nav-link {
+          font-family: 'Fira Sans', sans-serif;
+          font-size: 28px;
+          color: white;
+          background: #F77777;
+          text-decoration: none;
+          padding: .5vmin 2vmin;
+          margin-left: 30px;
+        }
+    .mid-container-desktop {
+      display: flex;
+      flex-direction: column;
+      width: 72.92vmax;
+      margin-top: 17.5vmax;
+      height: 50vh; /* debug */
+      border: 1px solid red; /* debug */
+    }
+      .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .about-images-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 1px solid green; /* debug */
+        }
+        .about-paragraph-container {
+          margin-left: 5vmax;
+          margin-bottom: 5vmax;
+          max-width: 25vmax;
+          max-height: 250px;
+          border: 1px solid blue; /* debug */
+        }
+          .about-paragraph {
+
+            font-family: 'Martel', serif;
+            font-size: 18px;
+          }
+      .shop-container {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid red; /* debug */
+
+      }
+        .shop-item-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 250px;
+          border: 1px solid green; /* debug */
+        }
+
+      .item-name-large {
+font-family: 'Raleway', sans-serif;
+font-size: 42px;
+font-weight: lighter;
+padding-top: 5vmax;
+
+}
+.item-name-medium {
+font-family: 'Fira Sans', sans-serif;
+font-size: 24px;
+font-weight: 800;
+margin-top: -.5vmax;
+}
+.item-pic {
+max-width: 200px;
+
+}
+.container-align {
+display: flex;
+margin: 1.25vmax;
+flex-direction: column;
+align-items: center;
+border: 1px solid blue; /* debug */
+}
+.item-description {
+  font-family: 'Martel', serif;
+  line-height: 2.1;
+  font-size: 18px;
+  max-width: 200px;
+  margin-bottom: 1.5vmax;
+
+}
+.instructions-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 35px;
+  background: #71D7FF;
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+}
+.instructions-link {
+  color: white;
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+.buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  width: 200px;
+  height: 50px;
+  background: #F77777;
+  border-radius: 30px;
+  box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+}
+.buy-link {
+  color: white;
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 24px;
+}

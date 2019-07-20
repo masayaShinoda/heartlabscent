@@ -308,3 +308,6 @@ html {
             max-width: 60px;
           }
     /* instructions end */
+    .parent-container-desktop { /* doesn't show up on mobile */
+      display: none;
+    }
