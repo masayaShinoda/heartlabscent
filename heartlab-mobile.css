@@ -234,6 +234,7 @@ html {
         font-weight: 500;
         font-family: 'Fira Sans', sans-serif;
         font-size: 24px;
+        text-decoration: none;
       }
     /* shop end */
     /* contact start */
@@ -261,6 +262,21 @@ html {
         color: black;
         box-shadow: 12px 5px 5px rgba(0,0,0,.25);
         margin-top: 2.5vmax;
+      }
+      .social-link-inactive {
+
+        max-width: 400px;
+        max-height: 100px;
+        padding: .75vmax;
+        border-radius: 50px;
+        display: flex;
+        margin-bottom: -1.5vmax;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        margin-left: 5vmax;
+        margin-top: 1.75vmax;
       }
       .social-icon {
         max-width: 42px;
