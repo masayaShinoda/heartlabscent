@@ -13,26 +13,26 @@ body {
   .parent-container-mobile {  /* doesn't show up on desktop */
     display: none;
   }
-  .parent-container-tablet {
+  .parent-container-desktop {
     display: none;
   }
-  .parent-container-desktop {
+  .parent-container-tablet {
     display: flex;
 
     flex-direction: column;
     align-items: center;
-    width: 72.92vmax;
     /*border: 1px solid red; /* debug */
   }
-    .upper-container-desktop {
+    .upper-container-tablet {
       display: flex;
       position: fixed;
       background: white;
-      justify-content: space-around;
-      align-items: flex-end;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding-top: 10vmin;
       padding-bottom: 2.5vmin;
-      width: 72.92vmax;
+      width: 100%;
       /*border: 1px solid blue; /* debug */
 
 
@@ -45,6 +45,7 @@ body {
       .nav-container {
         display: flex;
         justify-content: space-around;
+        margin-top: 5vmax;
          /*border: 1px solid green; /* debug */
       }
         .nav-link {
@@ -67,18 +68,21 @@ body {
           margin-left: 30px;
           transition: .2s;
         }
-    .mid-container-desktop {
+    .mid-container-tablet {
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: 72.92vmax;
-      margin-top: 17.5vmax;
+      margin-top: 40vmax;
       /*border: 1px solid red; /* debug */
     }
       /* about starts */
       .about-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: -25vmax;
       }
         .about-images-container {
           display: flex;
@@ -87,10 +91,9 @@ body {
           /*border: 1px solid green; /* debug */
         }
         .about-paragraph-container {
-          margin-left: 5vmax;
-          margin-bottom: 5vmax;
-          max-width: 25vmax;
-          max-height: 250px;
+          max-width: 40vmax;
+          text-align: center;
+          margin-top: 7.5vmax;
           /*box-shadow: 5px 2px 2px rgba(0,0,0,.25);*/
           padding: .125vmax;
           /*border: 1px solid blue; /* debug */
@@ -103,7 +106,8 @@ body {
       /* shop starts */
       .shop-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
         /*border: 1px solid red; /* debug */
       }
         .shop-item-container {
@@ -182,20 +186,23 @@ body {
       /* instructions and contact start */
       .instructions-contact-parent-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin-top: 10vmax;
         margin-bottom: 2.5vmax;
+        max-width: 70vmin;
       }
         .instructions-container {
           display: flex;
           flex-direction: column;
-          max-width: 50%;
+          align-items: center;
           /*border: 1px solid blue; /* debug */
         }
         .heading {
           font-family: 'Fira Sans', sans-serif;
           font-weight: 800;
           font-size: 24px;
+          margin: .5vmax;
         }
         /* instructions start */
         .for-use-container-parent {
@@ -216,14 +223,14 @@ body {
           justify-content: center;
           align-items: center;
           /*border: 1px solid blue; /* debug */
-          margin: .75vmax .25vmax;
+          margin: 1.75vmax 2.75vmax;
         }
         .where-use-icon {
           max-width: 80px;
         }
         /* instructions end */
         /* contact start */
-        .contact-container {margin-left: 2.75vmax;}
+        .contact-container {margin: 3.5vmax; margin-top: 5.75vmax;}
         .social-link-container {
           display: flex;
           flex-direction: column;

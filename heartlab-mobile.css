@@ -14,10 +14,13 @@ html {
 
     /*border: 1px solid red; /* debug */
   }
+  .parent-container-tablet {
+    display: none;
+  }
     .upper-container-mobile {
       display: flex;
-      position: fixed;
-
+      position: absolute;
+      left: 7.5vmax;
 
       /*border: 1px solid blue; /* debug */
     }
