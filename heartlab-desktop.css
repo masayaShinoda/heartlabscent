@@ -33,6 +33,7 @@ body {
       padding-top: 10vmin;
       padding-bottom: 2.5vmin;
       width: 72.92vmax;
+      border-bottom: .25vmax solid #F7CDC7;
       /*border: 1px solid blue; /* debug */
 
 
