@@ -9,6 +9,8 @@ html {
 body {
   display: flex;
   justify-content: center;
+  background: url(./img/products/desktop-bg-blurred.jpg);
+  background-size: cover;
 }
   .parent-container-mobile {  /* doesn't show up on desktop */
     display: none;
@@ -18,30 +20,24 @@ body {
   }
   .parent-container-desktop {
     display: flex;
-
     flex-direction: column;
     align-items: center;
-    width: 72.92vmax;
+    /*width: 72.92vmax;*/
     /*border: 1px solid red; /* debug */
   }
     .upper-container-desktop {
       display: flex;
       position: fixed;
-      background: white;
       justify-content: center;
       align-items: flex-end;
-      padding-top: 5vmin;
+      padding-top: 3.75vmin;
       padding-bottom: 2.5vmin;
       width: 100vmax;
-
       /*border: 1px solid blue; /* debug */
-
-
     }
       .desktop-logo {
         display: inline-block;
-        max-width: 280px;
-
+        max-width: 250px;        
       }
       .nav-container {
         display: flex;
@@ -55,9 +51,11 @@ body {
           color: white;
           background: #F77777;
           text-decoration: none;
-          padding: .75vmin 2.5vmin;
+          padding: 1.25vmin 2.75vmin;
+          border-radius: 1.25vmax;
           margin-left: 30px;
           box-shadow: 5px 2px 2px rgba(0,0,0,.25);
+
         }
         .nav-link:hover {
           font-family: 'Fira Sans', sans-serif;
@@ -65,20 +63,27 @@ body {
           color: #F77777;
           background: white;
           text-decoration: none;
-          padding: .5vmin 2vmin;
           margin-left: 30px;
           transition: .2s;
         }
     .mid-container-desktop {
       display: flex;
       flex-direction: column;
-      width: 72.92vmax;
+      align-items: center;
+      /*width: 72.92vmax;*/
       margin-top: 17.5vmax;
+      padding: 1.25vmax;
+      border-radius: 3.25vmax;
+      background: white;
+      width: 100vmax;
+      max-width: 95vmax;
+      box-shadow: .75vmax -.75vmax .5vmax rgba(0,0,0,.375);
+      /*background: rgba(255,255,255,.825);  /* try */
       /*border: 1px solid red; /* debug */
     }
       /* about starts */
       .about-container {
-        display: flex;
+        display: flex; 
         justify-content: center;
         align-items: center;
       }
@@ -100,12 +105,14 @@ body {
           .about-paragraph {
             font-family: 'Martel', serif;
             font-size: 16px;
+            line-height: 1.8;
           }
       /* about ends */
       /* shop starts */
       .shop-container {
         display: flex;
-        justify-content: space-around;
+        max-width: 80vmax;
+        justify-content: space-between;
         /*border: 1px solid red; /* debug */
       }
         .shop-item-container {
@@ -113,6 +120,7 @@ body {
           flex-direction: column;
           align-items: center;
           width: 250px;
+          margin: 0 2.5vmax;  
           /*box-shadow: 5px 2px 2px rgba(0,0,0,.25);*/
           /*border: 1px solid green; /* debug */
         }
@@ -156,6 +164,12 @@ body {
               border-radius: 20px;
               box-shadow: 2px 5px 5px rgba(0,0,0,.5);
             }
+              .instructions-button:hover {
+              background: white;
+              }
+                .instructions-button:hover .instructions-link {
+                  color: #71D7FF;
+                }
               .instructions-link {
                 color: white;
                 font-weight: 500;
@@ -174,6 +188,12 @@ body {
               border-radius: 30px;
               box-shadow: 2px 5px 5px rgba(0,0,0,.5);
             }
+              .buy-button:hover {
+                background: white;
+              }
+              .buy-button:hover .buy-link {
+                color: #F77777;
+              }
               .buy-link {
                 color: white;
                 font-weight: 500;
@@ -234,13 +254,12 @@ body {
 
         }
           .social-link {
-
             max-width: 400px;
             max-height: 100px;
             padding: .5vmax;
             border-radius: 50px;
             display: flex;
-            background: rgba(0,0,0,.0125);
+            background: white;
             flex-direction: row;
             align-items: center;
             text-decoration: none;
