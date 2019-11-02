@@ -74,7 +74,7 @@ body {
       margin-top: 17.5vmax;
       padding: 1.25vmax;
       border-radius: 3.25vmax;
-      background: white;
+      background: rgb(230,230,230);
       width: 100vmax;
       max-width: 95vmax;
       box-shadow: .75vmax -.75vmax .5vmax rgba(0,0,0,.375);
