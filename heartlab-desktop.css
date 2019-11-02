@@ -113,6 +113,7 @@ body {
         display: flex;
         max-width: 80vmax;
         justify-content: space-between;
+        flex-wrap: wrap;
         /*border: 1px solid red; /* debug */
       }
         .shop-item-container {
@@ -138,7 +139,9 @@ body {
             margin-top: -.5vmax;
           }
           .item-pic {
-            max-width: 200px;
+            max-width: 20vmax;
+            border-radius: 1.25vmax;
+            margin: 2.5vmax .5vmax;
           }
           .container-align {
             display: flex;
