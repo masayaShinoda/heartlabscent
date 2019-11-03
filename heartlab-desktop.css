@@ -114,7 +114,7 @@ body {
         justify-content: center;
         align-items: center;        
         margin-top: 2.5vmax;
-        margin-bottom: 2.5vmax;
+        margin-bottom: -7.5vmax;
         max-width: 80vmax;
         flex-wrap: wrap;
         /*border: 1px solid red; /* debug */
