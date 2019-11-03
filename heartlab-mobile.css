@@ -6,12 +6,14 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: none;
+}
   .parent-container-mobile {
     display: flex;
     flex-direction: column;
     margin: 5vmax;
     margin-top: 10vmax;
-    margin-bottom: 0;
     /*border: 1px solid red; /* debug */
   }
   .parent-container-tablet {
@@ -170,70 +172,81 @@ html {
         #shop-image-4 {
           margin-top: 2vmax;
         }
-    .item-name-large {
-      font-family: 'Raleway', sans-serif;
-      font-size: 42px;
-      font-weight: lighter;
-      padding-top: 5vmax;
-
-    }
-    .item-name-medium {
-      font-family: 'Fira Sans', sans-serif;
-      font-size: 21px;
-      font-weight: 800;
-      margin-top: -1.5vmax;
-    }
+        .item-name-large {
+          font-family: 'Fira Sans', sans-serif;
+          font-size: 40px;
+          font-weight: lighter;
+          border-bottom: #f77777 solid 2.5px;
+          margin-bottom: .5vmax;
+        }
+        .item-name-medium {
+          font-family: 'Raleway', serif;
+          font-size: 24px;
+          margin-top: 1.25vmax;
+        }
     .item-pic {
       max-width: 320px;
-
+      border-radius: 2.5vmax;
+      margin: 2.5vmax;
+      border: .25vmax #f77777 solid;
     }
     .container-align {
       display: flex;
-      margin: 2.5vmax;
       flex-direction: column;
       width: 70vmin;
     }
-      .item-description {
-        font-family: 'Martel', serif;
-        line-height: 2.1;
-        font-size: 12px;
-        width: 100%;
-        margin-bottom: 2.5vmax;
-
+    .item-description {
+      font-family: 'Martel', serif;
+      line-height: 2.1;
+      font-size: 16px;
+      margin-bottom: 1.25vmax;
+    }
+    .instructions-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 125px;
+      height: 35px;
+      background: #71D7FF;
+      border-radius: 20px;
+      box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+      margin-top: 3.25vmax;
+    }
+      .instructions-button:hover {
+      background: white;
       }
-      .instructions-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 120px;
-        height: 35px;
-        background: #71D7FF;
-        border-radius: 20px;
-        box-shadow: 2px 5px 5px rgba(0,0,0,.5);
-      }
+        .instructions-button:hover .instructions-link {
+          color: #71D7FF;
+        }
       .instructions-link {
         color: white;
         font-weight: 500;
         font-family: 'Fira Sans', sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         text-decoration: none;
       }
-      .buy-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 16px;
-        width: 200px;
-        height: 50px;
-        background: #F77777;
-        border-radius: 30px;
-        box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+    .buy-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 16px;
+      width: 200px;
+      height: 50px;
+      background: #F77777;
+      border-radius: 30px;
+      box-shadow: 2px 5px 5px rgba(0,0,0,.5);
+    }
+      .buy-button:hover {
+        background: white;
+      }
+      .buy-button:hover .buy-link {
+        color: #F77777;
       }
       .buy-link {
         color: white;
         font-weight: 500;
         font-family: 'Fira Sans', sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         text-decoration: none;
       }
     /* shop end */
