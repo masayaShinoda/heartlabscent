@@ -9,6 +9,8 @@ html {
 body {
   display: flex;
   justify-content: center;
+  background: url('./img/products/desktop-bg-blurred.jpg');
+  background-size: cover;
 }
   .parent-container-mobile {  /* doesn't show up on desktop */
     display: none;
@@ -18,7 +20,6 @@ body {
   }
   .parent-container-tablet {
     display: flex;
-
     flex-direction: column;
     align-items: center;
     /*border: 1px solid red; /* debug */
@@ -26,26 +27,23 @@ body {
     .upper-container-tablet {
       display: flex;
       position: fixed;
-      background: white;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 10vmin;
+      padding-top: 7.5vmin;
       padding-bottom: 2.5vmin;
       width: 100%;
+      border-radius: 0 0 1.75vmax 1.75vmax;
       /*border: 1px solid blue; /* debug */
-
-
     }
-      .desktop-logo {
+      .tablet-logo {
         display: inline-block;
-        max-width: 280px;
-
+        max-width: 20vmax;
       }
       .nav-container {
         display: flex;
         justify-content: space-around;
-        margin-top: 5vmax;
+        margin-top: 2.5vmax;
          /*border: 1px solid green; /* debug */
       }
         .nav-link {
@@ -55,11 +53,12 @@ body {
           background: #F77777;
           text-decoration: none;
           padding: 1.25vmin 2.75vmin;
-          border-radius: 1.25vmax;
-          margin-left: 30px;
+          border-radius: 1.75vmax;
           box-shadow: 5px 2px 2px rgba(0,0,0,.25);
-
         }
+          .nav-link:nth-child(2), .nav-link:nth-child(3) {
+            margin-left: 1.75vmax;
+          }
           .nav-link:hover {
             font-family: 'Fira Sans', sans-serif;
             font-size: 25px;
@@ -74,7 +73,11 @@ body {
       flex-direction: column;
       align-items: center;
       width: 72.92vmax;
-      margin-top: 40vmax;
+      margin-top: 35vmax;
+      margin-bottom: 7.5vmax;
+      background: rgb(250,250,250);
+      border-radius: 3.25vmax;
+      box-shadow: .75vmax -.75vmax .5vmax rgba(0,0,0,.375);
       /*border: 1px solid red; /* debug */
     }
       /* about starts */
@@ -84,6 +87,7 @@ body {
         justify-content: center;
         align-items: center;
         margin-bottom: -25vmax;
+        margin-top: 7.5vmax;
       }
         .about-images-container {
           display: flex;
@@ -102,38 +106,46 @@ body {
           .about-paragraph {
             font-family: 'Martel', serif;
             font-size: 18px;
+            line-height: 2.1;
           }
       /* about ends */
       /* shop starts */
       .shop-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;        
+        margin-top: 2.5vmax;
+        margin-bottom: -7.5vmax;
+        max-width: 80vmax;
         flex-wrap: wrap;
         /*border: 1px solid red; /* debug */
       }
         .shop-item-container {
           display: flex;
-          flex-direction: column;
+          width: 70vmax;
+          justify-content: space-around;
           align-items: center;
-          width: 250px;
+          margin: 3.75vmax 0;
           /*box-shadow: 5px 2px 2px rgba(0,0,0,.25);*/
           /*border: 1px solid green; /* debug */
         }
-
+          .product-pic-desktop {
+            max-width: 25vmax;
+            border-radius: 2.5vmax;
+            border: .25vmax #f77777 solid;
+          }
           .item-name-large {
-            font-family: 'Raleway', sans-serif;
-            font-size: 42px;
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 40px;
             font-weight: lighter;
-            padding-top: 5vmax;
+
+            margin-bottom: .5vmax;
           }
           .item-name-medium {
-            font-family: 'Fira Sans', sans-serif;
-            font-size: 24px;
-            font-weight: 800;
-            margin-top: -.5vmax;
-          }
-          .item-pic {
-            max-width: 200px;
+            font-family: 'Raleway', serif;
+            margin: .75vmax 0;
+            
           }
           .container-align {
             display: flex;
@@ -145,9 +157,9 @@ body {
             .item-description {
               font-family: 'Martel', serif;
               line-height: 2.1;
-              font-size: 18px;
-              max-width: 200px;
-              margin-bottom: 1.5vmax;
+              font-size: 16px;
+              margin-top: 2.5vmax;
+              margin-bottom: 1.25vmax;
             }
             .instructions-button {
               display: flex;
@@ -159,11 +171,17 @@ body {
               border-radius: 20px;
               box-shadow: 2px 5px 5px rgba(0,0,0,.5);
             }
+              .instructions-button:hover {
+              background: white;
+              }
+                .instructions-button:hover .instructions-link {
+                  color: #71D7FF;
+                }
               .instructions-link {
                 color: white;
                 font-weight: 500;
                 font-family: 'Fira Sans', sans-serif;
-                font-size: 16px;
+                font-size: 14px;
                 text-decoration: none;
               }
             .buy-button {
@@ -177,11 +195,17 @@ body {
               border-radius: 30px;
               box-shadow: 2px 5px 5px rgba(0,0,0,.5);
             }
+              .buy-button:hover {
+                background: white;
+              }
+              .buy-button:hover .buy-link {
+                color: #F77777;
+              }
               .buy-link {
                 color: white;
                 font-weight: 500;
                 font-family: 'Fira Sans', sans-serif;
-                font-size: 24px;
+                font-size: 22px;
                 text-decoration: none;
               }
       /* shop end */
